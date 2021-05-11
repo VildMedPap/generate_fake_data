@@ -44,7 +44,7 @@ docker build -t faker .
 
 **Step 3**
 
-Run the Docker container to generate `--nb_docs xx` documents with seed `--seed x` in a file called `data.json` which will be mounted to your current directory
+Run the Docker container to generate `--nb_docs xx` documents with seed `--seed x` in a file called `fake_data.json` which will be mounted to your current directory
 
 ```sh
 docker run -v ${PWD}:/data faker --seed 42 --nb_docs 10
