@@ -47,7 +47,7 @@ docker build -t faker .
 Run the Docker container to generate `--nb_docs xx` documents with seed `--seed x` in a file called `data.json` which will be mounted to your current directory
 
 ```sh
-docker run -v ${PWD}:/app faker --seed 42 --nb_docs 10
+docker run -v ${PWD}:/data faker --seed 42 --nb_docs 10
 ```
 
 ## Example
@@ -58,10 +58,10 @@ Copy and paste the following command for a quick start
 git clone https://github.com/VildMedPap/generate_fake_data.git
 cd generate_fake_data
 docker build -t faker .
-docker run -v ${PWD}:/app faker --seed 42 --nb_docs 2
+docker run -v ${PWD}:/data faker --seed 42 --nb_docs 2
 ```
 
-and you'll get a `data.json` file with the following content
+and you'll get a `fake_data.json` file with the following content
 
 ```json
 [
