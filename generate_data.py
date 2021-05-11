@@ -37,5 +37,5 @@ for _ in range(nb_docs):
     profile["birthdate"] = profile["birthdate"].isoformat() + "T00:00:00.000+00:00"
     data.append(profile)
 
-with open('data.json', 'w') as fp:
+with open('/data/fake_data.json', 'w') as fp:
     json.dump(data, fp)
