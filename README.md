@@ -31,9 +31,11 @@ Execute a python script as a Docker container. The script will create some fake 
 ## How to
 
 **Step 1**
+
 Clone the repo
 
 **Step 2**
+
 Build the Docker image
 
 ```sh
@@ -41,6 +43,7 @@ docker build -t faker .
 ```
 
 **Step 3**
+
 Run the Docker container to generate `--nb_docs xx` documents with seed `--seed x` in a file called `data.json` which will be mounted to your current directory
 
 ```sh
@@ -52,8 +55,8 @@ docker run -v ${PWD}:/app faker --seed 42 --nb_docs 10
 Copy and paste the following command for a quick start
 
 ```sh
-git clone xxx
-cd faker
+git clone https://github.com/VildMedPap/generate_fake_data.git
+cd generate_fake_data
 docker build -t faker .
 docker run -v ${PWD}:/app faker --seed 42 --nb_docs 2
 ```
